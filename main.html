@@ -3,7 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inception - Movie Fan Page</title>
+    <title>Inception - Movie Info</title>
+    <style>
+        :root {
+            --bg-color: #0d1b2a;
+            --text-color: #e0e1dd;
+            --accent-color: #778da9;
+            --highlight-color: #415a77;
+            --link-color: #00b4d8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1b263b;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--highlight-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #1b263b;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: #1b263b;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #ffffff;
+            border-bottom: 2px solid var(--highlight-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .summary-text {
+            font-size: 1.15rem;
+            font-style: italic;
+        }
+
+        .actor-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .actor-list li {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: var(--highlight-color);
+            border-radius: 5px;
+        }
+
+        blockquote {
+            font-size: 1.25rem;
+            font-style: italic;
+            border-left: 4px solid var(--link-color);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: #ffffff;
+        }
+
+        aside {
+            background-color: #1b263b;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid var(--highlight-color);
+        }
+
+        aside h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #0d1b2a;
+            color: var(--accent-color);
+            border-top: 1px solid #1b263b;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,37 +140,42 @@
     </nav>
 
     <main>
-        <section id="summary">
+        <!-- Summary Section -->
+        <section class="summary-text">
             <h2>Plot Summary</h2>
-            <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., a process known as inception.</p>
+            <p>Dom Cobb is a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets. Offered a chance to have his criminal history erased, Cobb must perform an almost impossible task: plant an idea into a CEO's mind rather than steal one.</p>
         </section>
 
+        <!-- Actors Section -->
         <section id="actor">
-            <h2>Featured Actors</h2>
-            <ul>
+            <h2>Actors</h2>
+            <p>The film features an incredible ensemble cast who brought these complex dream-walkers to life.</p>
+            <ul class="actor-list">
                 <li><strong>Leonardo DiCaprio</strong> as Dom Cobb</li>
                 <li><strong>Joseph Gordon-Levitt</strong> as Arthur</li>
                 <li><strong>Elliot Page</strong> as Ariadne</li>
                 <li><strong>Tom Hardy</strong> as Eames</li>
+                <li><strong>Cillian Murphy</strong> as Robert Fischer</li>
             </ul>
         </section>
 
+        <!-- Quote Section -->
         <section id="quote">
             <h2>Favorite Quote</h2>
-            <blockquote>
-                "An idea is like a virus. Resilient. Highly contagious. And the smallest seed of an idea can grow. It can grow to define or destroy you."
-            </blockquote>
+            <p>One of the most iconic lines from the movie that perfectly encapsulates the theme of questioning reality:</p>
+            <blockquote>"You're waiting for a train. A train that will take you far away. You know where you hope this train will take you, but you can't know for sure. But it doesn't matter. Now, tell me why!"</blockquote>
         </section>
 
+        <!-- Aside: Details -->
         <aside>
-            <h3>Movie Facts</h3>
-            <p><strong>IMDb Rating:</strong> 8.8/10</p>
+            <h3>Movie Details</h3>
             <p><strong>Release Date:</strong> July 16, 2010</p>
+            <p><strong>IMDb Rating:</strong> 8.8/10</p>
         </aside>
     </main>
 
     <footer>
-        <p>Produced by: Emma Thomas and Christopher Nolan</p>
+        Produced by: Emma Thomas and Christopher Nolan
     </footer>
 
 </body>
